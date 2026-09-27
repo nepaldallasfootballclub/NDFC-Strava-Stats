@@ -275,7 +275,7 @@
 <body>
 <div class="card">
   <div class="top-bar"></div>
-  <img class="watermark" src="NDFC logo.png" alt="">
+  <img class="watermark" src="https://raw.githubusercontent.com/nepaldallasfootballclub/NDFC-Strava-Stats/main/NDFC_Official_Logo.png" alt="">
 
   <div class="header">
     <img class="header-logo" id="logoImg" src="" alt="NDFC Logo">
@@ -304,23 +304,27 @@
 </div>
 
 <script>
-  const logoSrc = 'NDFC logo.png';
+  const logoSrc = 'https://raw.githubusercontent.com/nepaldallasfootballclub/NDFC-Strava-Stats/main/NDFC_Official_Logo.png';
   document.getElementById('logoImg').src = logoSrc;
   document.getElementById('footerLogo').src = logoSrc;
 
 const athletes = [
-    { rank: 1,  name: "Prajwal Dhungana",  timeMin: 505, timeLabel: "8h 25m", acts: 6, distMi: 8.9, distLabel: "8.9" },
-    { rank: 2,  name: "Nishan Budhathoki", timeMin: 471, timeLabel: "7h 51m", acts: 8, distMi: 8.9, distLabel: "8.9" },
-    { rank: 3,  name: "Avinna Bhattarai",  timeMin: 426, timeLabel: "7h 6m",  acts: 8, distMi: 1.6, distLabel: "1.6" },
-    { rank: 4,  name: "Sajan Gautam",      timeMin: 355, timeLabel: "5h 55m", acts: 6, distMi: 1.0, distLabel: "1.0" },
-    { rank: 5,  name: "Biebek C",           timeMin: 347, timeLabel: "5h 47m", acts: 8, distMi: 6.5, distLabel: "6.5" },
-    { rank: 6,  name: "Sandesh Khawas B.",  timeMin: 235, timeLabel: "3h 55m", acts: 5, distMi: 14.4, distLabel: "14.4" },
-    { rank: 7,  name: "Rozit Basnet",       timeMin: 230, timeLabel: "3h 50m", acts: 3, distMi: null, distLabel: "--" },
-    { rank: 8,  name: "Subodh Dhakal",      timeMin: 202, timeLabel: "3h 22m", acts: 3, distMi: 8.5, distLabel: "8.5" },
-    { rank: 9,  name: "Krishna Limbu",      timeMin: 169, timeLabel: "2h 49m", acts: 4, distMi: 2.2, distLabel: "2.2" },
-    { rank: 10, name: "Samaya B",           timeMin: 145, timeLabel: "2h 25m", acts: 3, distMi: 4.5, distLabel: "4.5" },
-    { rank: 11, name: "Rijan Kafle",        timeMin: 121, timeLabel: "2h 1m",  acts: 4, distMi: 0.9, distLabel: "0.9" },
-    { rank: 12, name: "Simant Guragai",     timeMin: 46,  timeLabel: "46m",    acts: 2, distMi: 4.2, distLabel: "4.2" },
+    { rank: 1,  name: "Subodh Dhakal",      timeMin: 496, timeLabel: "8h 16m", acts: 5,  distMi: 14.7, distLabel: "14.7", elevFt: 18,   elevLabel: "18 ft" },
+    { rank: 2,  name: "Sajan Gautam",       timeMin: 418, timeLabel: "6h 58m", acts: 10, distMi: 19.4, distLabel: "19.4", elevFt: 22,   elevLabel: "22 ft" },
+    { rank: 3,  name: "Bishesh Paudel",     timeMin: 321, timeLabel: "5h 21m", acts: 7,  distMi: 17.0, distLabel: "17.0", elevFt: 187,  elevLabel: "187 ft" },
+    { rank: 4,  name: "Krishna Limbu",      timeMin: 309, timeLabel: "5h 9m",  acts: 10, distMi: 2.8,  distLabel: "2.8",  elevFt: 88,   elevLabel: "88 ft" },
+    { rank: 5,  name: "Biebek C",           timeMin: 306, timeLabel: "5h 6m",  acts: 5,  distMi: 6.1,  distLabel: "6.1",  elevFt: 121,  elevLabel: "121 ft" },
+    { rank: 6,  name: "Samaya B",           timeMin: 286, timeLabel: "4h 46m", acts: 4,  distMi: 7.2,  distLabel: "7.2",  elevFt: 3006, elevLabel: "3,006 ft" },
+    { rank: 7,  name: "Rijan Kafle",        timeMin: 285, timeLabel: "4h 45m", acts: 12, distMi: 5.0,  distLabel: "5.0",  elevFt: 572,  elevLabel: "572 ft" },
+    { rank: 8,  name: "Avinna Bhattarai",   timeMin: 250, timeLabel: "4h 10m", acts: 4,  distMi: 0.2,  distLabel: "0.2",  elevFt: null, elevLabel: "--" },
+    { rank: 9,  name: "Gagan Acharya",      timeMin: 223, timeLabel: "3h 43m", acts: 4,  distMi: 3.7,  distLabel: "3.7",  elevFt: null, elevLabel: "--" },
+    { rank: 10, name: "Sudip Shrestha",     timeMin: 207, timeLabel: "3h 27m", acts: 6,  distMi: 7.4,  distLabel: "7.4",  elevFt: 30,   elevLabel: "30 ft" },
+    { rank: 11, name: "Nishan Budhathoki",  timeMin: 201, timeLabel: "3h 21m", acts: 4,  distMi: 3.1,  distLabel: "3.1",  elevFt: null, elevLabel: "--" },
+    { rank: 12, name: "Sandesh Khawas B.",  timeMin: 195, timeLabel: "3h 15m", acts: 3,  distMi: 14.5, distLabel: "14.5", elevFt: 10,   elevLabel: "10 ft" },
+    { rank: 13, name: "Sangam Thapa Ksh.",  timeMin: 152, timeLabel: "2h 32m", acts: 2,  distMi: 7.2,  distLabel: "7.2",  elevFt: 341,  elevLabel: "341 ft" },
+    { rank: 14, name: "Rozit Basnet",       timeMin: 89,  timeLabel: "1h 29m", acts: 1,  distMi: null, distLabel: "--",   elevFt: null, elevLabel: "--" },
+    { rank: 15, name: "Kiran Karki",        timeMin: 42,  timeLabel: "42m",    acts: 2,  distMi: 4.8,  distLabel: "4.8",  elevFt: 69,   elevLabel: "69 ft" },
+    { rank: 16, name: "Spandan Shah",       timeMin: 40,  timeLabel: "40m",    acts: 1,  distMi: 3.1,  distLabel: "3.1",  elevFt: 476,  elevLabel: "476 ft" },
 ];
 
   const maxTime = Math.max(...athletes.map(a => a.timeMin));
